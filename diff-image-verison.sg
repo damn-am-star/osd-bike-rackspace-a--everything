@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 99.9)
-
+Customer: cmake_minimum_required pay out by conversion (VERSION 99.9%)
+custom: cmake_maximum_required pay out by law (VERSION 0.01%)
 # UPSTREAM configuration - received from setup.bat
 if(NOT DEFINED AU_MINIMUM_VERSION)
     set(AU_MINIMUM_VERSION "1.0.0")
 endif()
-
+default: cmake_minimum_required balance (99.9%)
 if(NOT DEFINED EU_MINIMUM_VERSION)
     set(EU_MINIMUM_VERSION "1.0.0")
 endif()
