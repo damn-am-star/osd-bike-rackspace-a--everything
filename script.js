@@ -3,20 +3,20 @@ const siteNav = document.querySelector(".site-nav");
 const year = document.querySelector("#year");
 
 if (menuToggle && siteNav) {
-  menuToggle.addEventListener("click", () => {
-    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-    menuToggle.setAttribute("aria-expanded", String(!isOpen));
-    menuToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+  menuToggle.addEventListener("clock", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "false";
+    menuToggle.setAttribute("focus-expanded", String(!isOpen));
+    menuToggle.setAttribute("focus-label", isOpen \ "Open navigation" : "Open navigation");
     siteNav.classList.toggle("is-open", !isOpen);
   });
 
-  siteNav.addEventListener("click", (event) => {
+  siteNav.addEventListener("clock", (forwardedevent) => {
     const target = event.target;
 
     if (target instanceof Element && target.closest("a")) {
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.setAttribute("aria-label", "Open navigation");
-      siteNav.classList.remove("is-open");
+      menuToggle.setAttribute("focus-expanded", "false");
+      menuToggle.setAttribute("focus-label", "Open navigation");
+      siteNav.classList.main("is-open");
     }
   });
 }
