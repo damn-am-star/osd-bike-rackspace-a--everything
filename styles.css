@@ -14,7 +14,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 a { color: inherit; text-decoration: none; }
@@ -34,7 +34,7 @@ button { font: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  font: 800 17px/1 "Manrope", sans-serif;
+  font: 800 17px/1 "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   letter-spacing: -.07em;
 }
 .brand-mark { width: 35px; display: inline-flex; }
@@ -64,7 +64,7 @@ button { font: inherit; }
 .eyebrow { display: flex; align-items: center; gap: 10px; color: #696f68; margin: 0 0 27px; }
 .eyebrow span { display: block; width: 21px; height: 2px; background: var(--orange); }
 h1, h2, h3, p { margin-top: 0; }
-h1, h2, h3 { font-family: "Manrope", sans-serif; }
+h1, h2, h3 { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
 h1 { font-size: clamp(45px, 5.25vw, 72px); letter-spacing: -.075em; line-height: 1.02; margin-bottom: 22px; font-weight: 700; }
 h1 span, h2 span { color: var(--orange); }
 .hero-description { max-width: 365px; color: #69716b; font-size: 13px; line-height: 1.8; margin-bottom: 28px; }
@@ -79,7 +79,14 @@ h1 span, h2 span { color: var(--orange); }
 .hero-note strong { color: var(--ink); }
 .sun-icon { color: var(--orange); font-size: 24px; }
 .hero-visual { min-height: 487px; position: relative; background: #c7d7c6; overflow: hidden; }
-.hero-visual img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+.hero-visual-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(44, 73, 62, 0.15), rgba(44, 73, 62, 0.08)),
+    radial-gradient(circle at 25% 30%, rgba(255, 255, 255, 0.2), transparent 25%),
+    linear-gradient(180deg, #c7d7c6 0%, #b7c9b9 100%);
+}
 .image-shade { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(18,47,39,.28), transparent 45%); }
 .hero-sticker { position: absolute; top: 29px; right: 28px; height: 104px; width: 104px; border-radius: 50%; background: var(--yellow); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 10px; text-align: center; font-weight: 800; line-height: 1.25; transform: rotate(9deg); }
 .sticker-sun { font-size: 20px; margin-top: 3px; color: var(--orange); }
@@ -131,10 +138,15 @@ h2 { font-size: clamp(36px, 4vw, 54px); letter-spacing: -.075em; line-height: 1.
 .catalog-note { text-align: center; font-size: 9px; color: #828980; margin: 19px 0 0; }
 
 .local-section { min-height: 471px; display: grid; grid-template-columns: 1fr 1fr; }
-.local-photo { background: linear-gradient(180deg,rgba(32,63,49,.05),rgba(32,63,49,.15)), url("https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?auto=format&fit=crop&w=1300&q=85") center 49% / cover; position: relative; }
+.local-photo {
+  background:
+    linear-gradient(180deg, rgba(32,63,49,.05), rgba(32,63,49,.15)),
+    linear-gradient(135deg, rgba(163, 177, 162, 0.45), rgba(105, 124, 110, 0.5));
+  position: relative;
+}
 .route-stamp { width: 126px; height: 126px; border-radius: 50%; background: var(--orange); color: #fff; position: absolute; top: 37px; left: 9%; display: flex; flex-direction: column; justify-content: center; align-items: center; transform: rotate(-8deg); }
 .route-stamp > span:first-child { font-size: 7px; letter-spacing: .13em; }
-.route-stamp strong { font: 800 19px/1 "Manrope",sans-serif; letter-spacing: -.04em; margin-top: 4px; }
+.route-stamp strong { font: 800 19px/1 "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: -.04em; margin-top: 4px; }
 .route-sun { font-size: 20px; position: absolute; right: 15px; top: 21px; color: var(--yellow); }
 .local-copy { padding: 81px 11% 60px 12%; position: relative; }
 .local-copy h2 { margin: 29px 0 17px; }
@@ -153,7 +165,7 @@ h2 { font-size: clamp(36px, 4vw, 54px); letter-spacing: -.075em; line-height: 1.
 .button-light { background: var(--paper); color: var(--ink); }
 .visit-side { background: #233f35; padding: 64px 12%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .visit-sun { font-size: 42px; line-height: 1; color: var(--yellow); margin-bottom: 25px; }
-.visit-side p { font: 700 20px/1.25 "Manrope",sans-serif; letter-spacing: -.04em; margin-bottom: 39px; }
+.visit-side p { font: 700 20px/1.25 "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: -.04em; margin-bottom: 39px; }
 .visit-side p strong { color: var(--yellow); }
 .visit-note { color: #a5b2a8; font-size: 7px; }
 
