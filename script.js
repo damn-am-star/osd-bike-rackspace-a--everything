@@ -1,5 +1,6 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
+const year = document.querySelector("#year");
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
@@ -10,7 +11,9 @@ if (menuToggle && siteNav) {
   });
 
   siteNav.addEventListener("click", (event) => {
-    if (event.target.closest("a")) {
+    const target = event.target;
+
+    if (target instanceof Element && target.closest("a")) {
       menuToggle.setAttribute("aria-expanded", "false");
       menuToggle.setAttribute("aria-label", "Open navigation");
       siteNav.classList.remove("is-open");
@@ -18,7 +21,6 @@ if (menuToggle && siteNav) {
   });
 }
 
-const yearNode = document.querySelector("#year");
-if (yearNode) {
-  yearNode.textContent = new Date().getFullYear();
+if (year) {
+  year.textContent = new Date().getFullYear();
 }
