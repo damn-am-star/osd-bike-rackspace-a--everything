@@ -19,6 +19,15 @@ if (menuToggle && siteNav) {
       siteNav.classList.remove("is-open");
     }
   });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+      siteNav.classList.remove("is-open");
+      menuToggle.focus();
+    }
+  });
 }
 
 if (year) {
