@@ -41,6 +41,18 @@ Instructions:
 Here is the output you should expect from the plot() command:
 ![plot(bike.racks)](/examples/R-plot-bike-racks.png)
 
+Hosting on Azure Static Web Apps
+================================
+
+This repository's static site can be deployed to Azure Static Web Apps with the
+workflow at `.github/workflows/azure-static-web-apps.yml`. Create an Azure Static
+Web App, copy its deployment token, and add it to the GitHub repository as the
+`AZURE_STATIC_WEB_APPS_API_TOKEN` Actions secret. The workflow deploys the files
+from the repository root when changes are pushed to `master`, or when run manually.
+
+The site uses standard HTML, CSS, and JavaScript and includes keyboard focus
+indicators and Escape-to-close behavior for the mobile menu for Microsoft Edge.
+
 License
 =======
 
