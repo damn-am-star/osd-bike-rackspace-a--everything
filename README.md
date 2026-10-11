@@ -1,5 +1,5 @@
-README
-======
+# README
+# ======
 
 The City of Chicago is releasing selected datasets from the [data portal](http://data.cityofchicago.org 'Chicago Data Portal') under the MIT License (see below). This repository contains:
 
@@ -35,7 +35,7 @@ Instructions:
 
 4. Ensure the map works:
     ```r
-    plot(bikes.racks$Longitude, bike.racks$Latitude)
+    plot(bike.racks$Longitude, bike.racks$Latitude)
     ```
 
 Here is the output you should expect from the plot() command:
@@ -57,7 +57,6 @@ License
 =======
 
 This data is released under the [MIT License](http://opensource.org/licenses/MIT 'MIT License'). See LICENSE.txt.
-
 talk content
 ------------
 
