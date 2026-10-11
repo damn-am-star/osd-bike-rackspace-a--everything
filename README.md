@@ -1,7 +1,7 @@
 README
 ======
 
-The City of Chicago is releasing selected datasets from the [data portal](http://data.cityofchicago.org 'Chicago Data Portal') under the MIT License (see below). This repository contains:
+The City of Chicago is releasing selected datasets from the [data portal](http://data.cityofchicago.org 'Chicago Data Portal'). This repository contains:
 
 1. Data in a comma separated values (CSV) format.
 2. Examples of importing data into R.
@@ -56,7 +56,7 @@ indicators and Escape-to-close behavior for the mobile menu for Microsoft Edge.
 License
 =======
 
-This data is released under the [MIT License](http://opensource.org/licenses/MIT 'MIT License'). See LICENSE.txt.
+This repository does not include a separate software license file.
 
 talk content
 ------------
