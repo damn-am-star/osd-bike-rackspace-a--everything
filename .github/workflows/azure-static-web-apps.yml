@@ -1,8 +1,6 @@
 name: Deploy to Azure Static Web Apps
 
 on:
-  push:
-    branches: ["master"]
   workflow_dispatch:
 
 permissions:
