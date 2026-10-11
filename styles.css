@@ -1,10 +1,10 @@
 :root {
   color-scheme: light;
-  --ink: #193a30;
-  --paper: #f7f5ef;
-  --orange: #ef6e42;
-  --green: #91a988;
-  --yellow: #f2c853;
+  --ink: #421c23;
+  --paper: #fff7f7;
+  --orange: #c62828;
+  --green: #dba5ab;
+  --yellow: #ffd6d6;
   --muted: #717872;
 }
 
@@ -20,6 +20,7 @@ body {
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
+.visit-section a:focus-visible { outline-color: var(--paper); }
 
 .site-header {
   height: 82px;
@@ -79,14 +80,14 @@ h1 span, h2 span { color: var(--orange); }
 .hero-note { display: flex; align-items: center; gap: 11px; margin-top: 48px; font-size: 9px; color: #787d76; line-height: 1.6; }
 .hero-note strong { color: var(--ink); }
 .sun-icon { color: var(--orange); font-size: 24px; }
-.hero-visual { min-height: 487px; position: relative; background: #c7d7c6; overflow: hidden; }
+.hero-visual { min-height: 487px; position: relative; background: #efc3c6; overflow: hidden; }
 .hero-visual-backdrop {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(135deg, rgba(44, 73, 62, 0.15), rgba(44, 73, 62, 0.08)),
+    linear-gradient(135deg, rgba(98, 29, 40, 0.15), rgba(98, 29, 40, 0.08)),
     radial-gradient(circle at 25% 30%, rgba(255, 255, 255, 0.2), transparent 25%),
-    linear-gradient(180deg, #c7d7c6 0%, #b7c9b9 100%);
+    linear-gradient(180deg, #efc3c6 0%, #dba5ab 100%);
 }
 .image-shade { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(18,47,39,.28), transparent 45%); }
 .hero-sticker { position: absolute; top: 29px; right: 28px; height: 104px; width: 104px; border-radius: 50%; background: var(--yellow); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 10px; text-align: center; font-weight: 800; line-height: 1.25; transform: rotate(9deg); }
@@ -100,14 +101,14 @@ h1 span, h2 span { color: var(--orange); }
 .section-label span { color: var(--orange); }
 .intro-content { display: grid; grid-template-columns: 1fr .53fr; gap: 8%; align-items: end; margin: 29px 0 49px; }
 h2 { font-size: clamp(36px, 4vw, 54px); letter-spacing: -.075em; line-height: 1.06; font-weight: 700; margin-bottom: 0; }
-.intro-content h2 span { color: #9ba89a; }
+.intro-content h2 span { color: var(--orange); }
 .intro-copy { max-width: 330px; padding-bottom: 3px; }
 .intro-copy p, .local-copy > p, .visit-main > p { color: #6b746d; font-size: 12px; line-height: 1.8; margin-bottom: 17px; }
 .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; }
 .service-card { padding: 22px 23px 21px; min-height: 231px; display: flex; flex-direction: column; align-items: flex-start; }
-.service-orange { background: #f5e0d4; }
-.service-green { background: #dce6d8; }
-.service-yellow { background: #f4e9c9; }
+.service-orange { background: #f8dada; }
+.service-green { background: #f5e1e3; }
+.service-yellow { background: #fcebed; }
 .card-icon { align-self: flex-end; font-size: 17px; margin: -2px 0 17px; }
 .card-number { color: #7a8179; font-size: 8px; margin-bottom: 9px; }
 .service-card h3 { font-size: 19px; letter-spacing: -.05em; margin-bottom: 8px; }
@@ -115,7 +116,7 @@ h2 { font-size: clamp(36px, 4vw, 54px); letter-spacing: -.075em; line-height: 1.
 .service-card > a { font-size: 9px; font-weight: 700; margin-top: 16px; }
 .service-card > a span { margin-left: 7px; color: var(--orange); }
 
-.bike-section { background: #e8e9df; padding: 87px 7.2% 88px; }
+.bike-section { background: #f7e6e8; padding: 87px 7.2% 88px; }
 .bike-section-inner { max-width: 1280px; margin: 0 auto; }
 .bike-heading { display: flex; align-items: end; justify-content: space-between; margin: 28px 0 35px; }
 .bike-heading h2 span { color: var(--orange); }
@@ -123,9 +124,9 @@ h2 { font-size: clamp(36px, 4vw, 54px); letter-spacing: -.075em; line-height: 1.
 .bike-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 15px; }
 .bike-card { display: block; }
 .bike-image { height: 224px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.bike-city { background: #cedbd0; }
-.bike-trail { background: #c4cec2; }
-.bike-electric { background: #e8d9be; }
+.bike-city { background: #efc3c6; }
+.bike-trail { background: #dba5ab; }
+.bike-electric { background: #f5d6d9; }
 .bike-image::before, .bike-image::after { content: ""; position: absolute; border: 1px solid rgba(255,255,255,.45); border-radius: 50%; width: 250px; height: 250px; }
 .bike-image::after { width: 180px; height: 180px; }
 .bike-tag { position: absolute; z-index: 1; left: 15px; top: 15px; padding: 7px 9px; background: rgba(247,245,239,.8); font-size: 7px; letter-spacing: .1em; font-weight: 700; }
@@ -141,8 +142,8 @@ h2 { font-size: clamp(36px, 4vw, 54px); letter-spacing: -.075em; line-height: 1.
 .local-section { min-height: 471px; display: grid; grid-template-columns: 1fr 1fr; }
 .local-photo {
   background:
-    linear-gradient(180deg, rgba(32,63,49,.05), rgba(32,63,49,.15)),
-    linear-gradient(135deg, rgba(163, 177, 162, 0.45), rgba(105, 124, 110, 0.5));
+    linear-gradient(180deg, rgba(98,29,40,.05), rgba(98,29,40,.15)),
+    linear-gradient(135deg, rgba(239, 195, 198, 0.45), rgba(219, 165, 171, 0.5));
   position: relative;
 }
 .route-stamp { width: 126px; height: 126px; border-radius: 50%; background: var(--orange); color: #fff; position: absolute; top: 37px; left: 9%; display: flex; flex-direction: column; justify-content: center; align-items: center; transform: rotate(-8deg); }
@@ -166,7 +167,7 @@ h2 { font-size: clamp(36px, 4vw, 54px); letter-spacing: -.075em; line-height: 1.
 .button-light { background: var(--paper); color: var(--ink); }
 .contact-details { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 22px; font-size: 11px; }
 .contact-details a { text-decoration: underline; text-underline-offset: 3px; }
-.visit-side { background: #233f35; padding: 64px 12%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.visit-side { background: #632630; padding: 64px 12%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .visit-sun { font-size: 42px; line-height: 1; color: var(--yellow); margin-bottom: 25px; }
 .visit-side p { font: 700 20px/1.25 "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: -.04em; margin-bottom: 39px; }
 .visit-side p strong { color: var(--yellow); }
