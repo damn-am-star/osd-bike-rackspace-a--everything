@@ -1,4 +1,12 @@
-README
+No changes to commit. Pushed existing commits.
+
+Progress:
+- [x] Confirm repository state
+- [x] Push any pending branch changes to the GitHub PR
+
+
+
+README.md
 ======
 
 The City of Chicago is releasing selected datasets from the [data portal](http://data.cityofchicago.org 'Chicago Data Portal') under the MIT License (see below). This repository contains:
