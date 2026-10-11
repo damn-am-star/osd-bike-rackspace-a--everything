@@ -164,6 +164,8 @@ h2 { font-size: clamp(36px, 4vw, 54px); letter-spacing: -.075em; line-height: 1.
 .visit-main h2 span { color: var(--yellow); }
 .visit-main > p { color: #b7c1b9; max-width: 360px; margin-bottom: 23px; }
 .button-light { background: var(--paper); color: var(--ink); }
+.contact-details { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 22px; font-size: 11px; }
+.contact-details a { text-decoration: underline; text-underline-offset: 3px; }
 .visit-side { background: #233f35; padding: 64px 12%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .visit-sun { font-size: 42px; line-height: 1; color: var(--yellow); margin-bottom: 25px; }
 .visit-side p { font: 700 20px/1.25 "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: -.04em; margin-bottom: 39px; }
