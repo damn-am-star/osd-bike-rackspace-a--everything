@@ -30,6 +30,27 @@ if (menuToggle && siteNav) {
   });
 }
 
+document.querySelectorAll(".copy-button").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const target = document.getElementById(button.dataset.copyTarget || "");
+
+    if (!target || !navigator.clipboard) {
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(target.textContent || "");
+      button.textContent = "Copied";
+    } catch {
+      button.textContent = "Press Ctrl+C";
+    }
+
+    setTimeout(() => {
+      button.textContent = "Copy";
+    }, 1800);
+  });
+});
+
 if (year) {
   year.textContent = new Date().getFullYear();
 }
