@@ -251,3 +251,20 @@ h2 { font-size: clamp(36px, 4vw, 54px); letter-spacing: -.075em; line-height: 1.
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+/* ID.me verified discounts */
+.idme-section { display: flex; align-items: center; justify-content: space-between; gap: 64px; background: var(--paper); border-top: 1px solid rgba(25,58,48,.15); }
+.idme-copy { flex: 1 1 520px; max-width: 640px; }
+.idme-copy h2 { margin: 22px 0 20px; }
+.idme-copy h2 span { color: var(--orange); }
+.idme-copy p { color: var(--muted); line-height: 1.6; }
+.idme-button { margin-top: 28px; }
+.idme-button strong { font-weight: 800; }
+.idme-fineprint { margin-top: 16px; font-size: 12px; }
+.idme-groups { flex: 0 1 380px; margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+.idme-groups li { padding: 12px 16px; border: 1px solid rgba(25,58,48,.3); border-radius: 999px; font-size: 12px; font-weight: 700; color: var(--ink); background: #fff; }
+.idme-button:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+@media (max-width: 850px) {
+  .idme-section { flex-direction: column; align-items: flex-start; gap: 36px; }
+  .idme-groups { flex-basis: auto; }
+}
